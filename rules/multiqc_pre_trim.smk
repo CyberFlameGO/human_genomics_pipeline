@@ -8,4 +8,4 @@ rule multiqc_pre_trim:
     message:
         "Searching for analysis logs to compile a HTML report"
     shell:
-        "multiqc {input} -o qc/multiqc/ -i pre_trim"
+        "(time multiqc {input} -o qc/multiqc/ -i pre_trim) 2> times/multiqc_pre_trim_time.txt"

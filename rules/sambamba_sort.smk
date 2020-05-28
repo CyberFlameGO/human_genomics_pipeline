@@ -17,4 +17,4 @@ rule sambamba_sort:
     message:
         "Sorting BAM files"
     shell:
-        "sambamba sort -p {input} -o {output.bams} --tmpdir={params.tdir} {params.other} -t {threads}"
+        "(time sambamba sort -p {input} -o {output.bams} --tmpdir={params.tdir} {params.other} -t {threads}) 2> times/sambamba_sort_time.txt"

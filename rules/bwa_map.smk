@@ -15,4 +15,4 @@ rule bwa_map:
     message:
         "Mapping sequences against a reference human genome with BWA-MEM"
     shell: 
-        "bwa mem {input.refgenome} {input.R1} {input.R2} -t {threads} -M | samtools view -@ {threads} -Sbh - > {output}"
+        "(time bwa mem {input.refgenome} {input.R1} {input.R2} -t {threads} -M | samtools view -@ {threads} -Sbh - > {output}) 2> times/bwa_map_time.txt"

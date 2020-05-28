@@ -21,4 +21,4 @@ rule trim_galore_pe:
     message:
         "Applying quality and adapter trimming of input fastq files: {input.R1} and {input.R2}"
     shell:
-        "trim_galore --paired {input.R1} {input.R2} -o trim_galore/ --cores {threads} {params}"
+        "(trim_galore --paired {input.R1} {input.R2} -o trim_galore/ --cores {threads} {params}) 2> times/trim_galore_pe_time.txt"

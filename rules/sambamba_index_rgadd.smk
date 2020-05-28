@@ -13,4 +13,4 @@ rule sambamba_index_rgadd:
     message:
         "Building index files for BAM files"
     shell:
-        "sambamba index -p {input} -t {threads}"
+        "(time sambamba index -p {input} -t {threads}) 2> times/sambamba_index_rgadd_time.txt"

@@ -15,4 +15,4 @@ rule fastqc:
     message:
         "Undertaking quality control checks on raw sequence data"
     shell:
-        "fastqc {input.R1} {input.R2} --outdir qc/fastqc 2> {log} --threads {threads}"
+        "(time fastqc {input.R1} {input.R2} --outdir qc/fastqc 2> {log} --threads {threads}) 2> times/fastqc_time.txt"
