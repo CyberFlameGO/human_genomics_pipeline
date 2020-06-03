@@ -1,0 +1,81 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	2	bwa_map
+	2	fastqc
+	2	gatk4_AddOrReplaceReadGroups
+	2	gatk4_ApplyBQSR
+	2	gatk4_BaseRecalibrator
+	2	gatk4_HaplotypeCaller_single
+	1	multiqc_post_trim
+	1	multiqc_pre_trim
+	2	sambamba_index_rgadd
+	2	sambamba_mkdups
+	2	sambamba_sort
+	2	trim_galore_pe
+	23
+
+[Wed Jun  3 12:54:06 2020]
+Job 7: Applying quality and adapter trimming of input fastq files: ../fastq/NIST7035_NIST_R1.fastq.gz and ../fastq/NIST7035_NIST_R2.fastq.gz
+
+
+[Wed Jun  3 12:54:06 2020]
+Job 5: Undertaking quality control checks on raw sequence data
+
+
+[Wed Jun  3 12:54:06 2020]
+Job 8: Applying quality and adapter trimming of input fastq files: ../fastq/NIST7086_NIST_R1.fastq.gz and ../fastq/NIST7086_NIST_R2.fastq.gz
+
+
+[Wed Jun  3 12:54:06 2020]
+Job 6: Undertaking quality control checks on raw sequence data
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/f089da10
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/b7c186a9
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/f089da10
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/b7c186a9
+[Wed Jun  3 13:01:54 2020]
+Finished job 5.
+1 of 23 steps (4%) done
+[Wed Jun  3 13:02:26 2020]
+Finished job 6.
+2 of 23 steps (9%) done
+
+[Wed Jun  3 13:02:26 2020]
+Job 1: Searching for analysis logs to compile a HTML report
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/e5ec216c
+[Wed Jun  3 13:02:44 2020]
+Finished job 1.
+3 of 23 steps (13%) done
+[Wed Jun  3 13:08:18 2020]
+[Wed Jun  3 13:08:18 2020]
+Error in rule trim_galore_pe:
+Error in rule trim_galore_pe:
+    jobid: 8
+    jobid: 7
+    output: trim_galore/NIST7086_NIST_R1_val_1.fq.gz, trim_galore/NIST7086_NIST_R2_val_2.fq.gz, trim_galore/NIST7086_NIST_R1_val_1_fastqc.zip, trim_galore/NIST7086_NIST_R2_val_2_fastqc.zip, trim_galore/NIST7086_NIST_R1.fastq.gz_trimming_report.txt, trim_galore/NIST7086_NIST_R2.fastq.gz_trimming_report.txt
+    output: trim_galore/NIST7035_NIST_R1_val_1.fq.gz, trim_galore/NIST7035_NIST_R2_val_2.fq.gz, trim_galore/NIST7035_NIST_R1_val_1_fastqc.zip, trim_galore/NIST7035_NIST_R2_val_2_fastqc.zip, trim_galore/NIST7035_NIST_R1.fastq.gz_trimming_report.txt, trim_galore/NIST7035_NIST_R2.fastq.gz_trimming_report.txt
+    log: logs/trim_galore/NIST7086_NIST.log (check log file(s) for error message)
+    log: logs/trim_galore/NIST7035_NIST.log (check log file(s) for error message)
+    conda-env: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/f089da10
+    conda-env: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/conda/f089da10
+    shell:
+        trim_galore --paired ../fastq/NIST7086_NIST_R1.fastq.gz ../fastq/NIST7086_NIST_R2.fastq.gz -o trim_galore/ --illumina --fastqc -q 20 --cores 4
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        trim_galore --paired ../fastq/NIST7035_NIST_R1.fastq.gz ../fastq/NIST7035_NIST_R2.fastq.gz -o trim_galore/ --illumina --fastqc -q 20 --cores 4
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+Removing output files of failed job trim_galore_pe since they might be corrupted:
+trim_galore/NIST7086_NIST_R1_val_1.fq.gz, trim_galore/NIST7086_NIST_R2_val_2.fq.gz, trim_galore/NIST7086_NIST_R1.fastq.gz_trimming_report.txt, trim_galore/NIST7086_NIST_R2.fastq.gz_trimming_report.txt
+Removing output files of failed job trim_galore_pe since they might be corrupted:
+trim_galore/NIST7035_NIST_R1_val_1.fq.gz, trim_galore/NIST7035_NIST_R2_val_2.fq.gz, trim_galore/NIST7035_NIST_R1.fastq.gz_trimming_report.txt, trim_galore/NIST7035_NIST_R2.fastq.gz_trimming_report.txt
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/.snakemake/log/2020-06-03T125405.924393.snakemake.log
