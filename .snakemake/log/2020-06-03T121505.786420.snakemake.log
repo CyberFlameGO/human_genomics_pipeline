@@ -1,0 +1,3 @@
+SyntaxError in line 8 of /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/rules/gatk_base_recalibrator.smk:
+invalid syntax
+  File "/store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.4/human_genomics_pipeline/Snakefile", line 48, in <module>
