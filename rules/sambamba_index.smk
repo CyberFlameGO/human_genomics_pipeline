@@ -13,4 +13,4 @@ rule sambamba_index:
     message:
         "Building index files for BAM files"
     shell:
-        "( time sambamba index -p {input} -t {threads} 2> sambamba_index.stderr ) 2> times/sambamba_index_time.txt"
+        "( /usr/bin/time sambamba index -p {input} -t {threads} 2> times/sambamba_index.stderr )"

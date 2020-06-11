@@ -8,4 +8,4 @@ rule multiqc_post_trim:
     message:
         "Searching for analysis logs to compile a HTML report"
     shell:
-        "( time multiqc {input} -o qc/multiqc/ -i post_trim 2> multiqc_post_trim.stderr ) 2> times/multiqc_post_trim_time.txt"
+        "( /usr/bin/time multiqc {input} -o qc/multiqc/ -i post_trim 2> times/multiqc_post_trim.stderr )"
