@@ -18,4 +18,4 @@ rule gatk4_ApplyBQSR:
     message:
 	    "Applying base quality score recalibration and producing a recalibrated BAM file"
     shell:
-        "( /usr/bin/time gatk ApplyBQSR -I {input.bams} -bqsr {input.recal} -R {input.refgenome} -O {output} {params.padding} {params.intervals} 2> times/gatk4_ApplyBQSR.stderr )"
+        "( /usr/bin/time gatk ApplyBQSR -I {input.bams} -bqsr {input.recal} -R {input.refgenome} -O {output} {params.padding} {params.intervals} ) 2> times/gatk4_ApplyBQSR.stderr"

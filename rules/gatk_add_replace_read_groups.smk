@@ -15,4 +15,4 @@ rule gatk4_AddOrReplaceReadGroups:
     message:
         "Assigning all reads to a single new read-group"
     shell:
-        "( /usr/bin/time gatk AddOrReplaceReadGroups -I {input} -O {output} --TMP_DIR {params.tdir} {params.other} 2> times/gatk4_AddOrReplaceReadGroups.stderr )"
+        "( /usr/bin/time gatk AddOrReplaceReadGroups -I {input} -O {output} --TMP_DIR {params.tdir} {params.other} ) 2> times/gatk4_AddOrReplaceReadGroups.stderr"

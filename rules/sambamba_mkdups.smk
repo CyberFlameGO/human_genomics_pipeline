@@ -17,4 +17,4 @@ rule sambamba_mkdups:
     message:
         "Finding duplicate reads in BAM files"
     shell:
-        "( /usr/bin/time sambamba markdup -p {input} {output.bam} --tmpdir={params.tdir} {params.other} -t {threads} 2> times/sambamba_mkdups.stderr )"
+        "( /usr/bin/time sambamba markdup -p {input} {output.bam} --tmpdir={params.tdir} {params.other} -t {threads} ) 2> times/sambamba_mkdups.stderr"

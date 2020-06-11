@@ -19,4 +19,4 @@ rule gatk4_HaplotypeCaller_single:
     message:
         "Calling germline SNPs and indels via local re-assembly of haplotypes"
     shell:
-        "( /usr/bin/time gatk HaplotypeCaller -I {input.bams} -R {input.refgenome} -D {input.dbsnp} -O {output} --tmp-dir {params.tdir} --native-pair-hmm-threads {threads} {params.padding} {params.intervals} 2> times/gatk4_HaplotypeCaller_single.stderr )"
+        "( /usr/bin/time gatk HaplotypeCaller -I {input.bams} -R {input.refgenome} -D {input.dbsnp} -O {output} --tmp-dir {params.tdir} --native-pair-hmm-threads {threads} {params.padding} {params.intervals} ) 2> times/gatk4_HaplotypeCaller_single.stderr"

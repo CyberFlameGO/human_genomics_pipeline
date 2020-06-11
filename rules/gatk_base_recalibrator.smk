@@ -18,4 +18,4 @@ rule gatk4_BaseRecalibrator:
     message:
         "Generating a recalibration table for the following rule (Base Quality Score Recalibration)"
     shell:
-        "( /usr/bin/time gatk BaseRecalibrator -I {input.bams} -R {input.refgenome} --known-sites {input.dbsnp} -O {output} {params.padding} {params.intervals} 2> times/gatk4_BaseRecalibrator.stderr )"
+        "( /usr/bin/time gatk BaseRecalibrator -I {input.bams} -R {input.refgenome} --known-sites {input.dbsnp} -O {output} {params.padding} {params.intervals} ) 2> times/gatk4_BaseRecalibrator.stderr"
