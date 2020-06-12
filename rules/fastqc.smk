@@ -15,4 +15,4 @@ rule fastqc:
     message:
         "Undertaking quality control checks on raw sequence data"
     shell:
-        "( /usr/bin/time fastqc {input.R1} {input.R2} --outdir qc/fastqc 2> {log} --threads {threads} ) 2> times/fastqc.stderr"
+        "( /usr/bin/time fastqc {input.R1} {input.R2} --outdir qc/fastqc 2> {log} --threads {threads} 2> times/fastqc.stderr ) "
