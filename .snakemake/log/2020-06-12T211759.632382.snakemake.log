@@ -1,0 +1,126 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	fastqc
+	1	gatk4_AddOrReplaceReadGroups
+	1	gatk4_ApplyBQSR
+	1	gatk4_BaseRecalibrator
+	1	gatk4_HaplotypeCaller_single
+	1	multiqc_post_trim
+	1	multiqc_pre_trim
+	1	sambamba_index
+	1	sambamba_index_rgadd
+	1	sambamba_mkdups
+	1	sambamba_sort
+	12
+
+[Fri Jun 12 21:17:59 2020]
+Job 12: Sorting BAM files
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/b1da5398
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_bwamem.bam.
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_bwamem_sorted.bam.bai.
+[Fri Jun 12 21:35:45 2020]
+Finished job 12.
+1 of 12 steps (8%) done
+
+[Fri Jun 12 21:35:45 2020]
+Job 10: Finding duplicate reads in BAM files
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/b1da5398
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_bwamem_sorted.bam.
+[Fri Jun 12 21:51:06 2020]
+Finished job 10.
+2 of 12 steps (17%) done
+
+[Fri Jun 12 21:51:06 2020]
+Job 11: Building index files for BAM files
+
+Warning: the following output files of rule sambamba_index were not present when the DAG was created:
+{'mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam.bai'}
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/b1da5398
+[Fri Jun 12 21:52:15 2020]
+Finished job 11.
+3 of 12 steps (25%) done
+
+[Fri Jun 12 21:52:15 2020]
+Job 7: Assigning all reads to a single new read-group
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/2de3cd06
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam.
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam.bai.
+[Fri Jun 12 21:56:16 2020]
+Finished job 7.
+4 of 12 steps (33%) done
+
+[Fri Jun 12 21:56:16 2020]
+Job 8: Building index files for BAM files
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/b1da5398
+[Fri Jun 12 21:57:48 2020]
+Finished job 8.
+5 of 12 steps (42%) done
+
+[Fri Jun 12 21:57:48 2020]
+Job 9: Generating a recalibration table for the following rule (Base Quality Score Recalibration)
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/2de3cd06
+[Sat Jun 13 00:31:38 2020]
+Finished job 9.
+6 of 12 steps (50%) done
+
+[Sat Jun 13 00:31:38 2020]
+Job 6: Applying base quality score recalibration and producing a recalibrated BAM file
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/2de3cd06
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_sorted_mkdups_rgreplaced.bam.
+Removing temporary output file mapped/NIST7035_NIST_chr1-15_sorted_mkdups_rgreplaced.bam.bai.
+[Sat Jun 13 00:48:44 2020]
+Finished job 6.
+7 of 12 steps (58%) done
+
+[Sat Jun 13 00:48:44 2020]
+Job 3: Calling germline SNPs and indels via local re-assembly of haplotypes
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/2de3cd06
+[Sat Jun 13 03:33:39 2020]
+Finished job 3.
+8 of 12 steps (67%) done
+
+[Sat Jun 13 03:33:39 2020]
+Job 4: Undertaking quality control checks on raw sequence data
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/390e3b42
+[Sat Jun 13 03:40:03 2020]
+Finished job 4.
+9 of 12 steps (75%) done
+
+[Sat Jun 13 03:40:03 2020]
+Job 2: Searching for analysis logs to compile a HTML report
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/3906a77b
+[Sat Jun 13 03:40:19 2020]
+Finished job 2.
+10 of 12 steps (83%) done
+
+[Sat Jun 13 03:40:19 2020]
+Job 1: Searching for analysis logs to compile a HTML report
+
+Activating conda environment: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/conda/3906a77b
+[Sat Jun 13 03:40:26 2020]
+Finished job 1.
+11 of 12 steps (92%) done
+
+[Sat Jun 13 03:40:26 2020]
+localrule all:
+    input: qc/multiqc/pre_trim_multiqc_report.html, qc/multiqc/post_trim_multiqc_report.html, vcf/NIST7035_NIST_chr1-15_raw_snps_indels_AS_g.vcf
+    jobid: 0
+
+[Sat Jun 13 03:40:26 2020]
+Finished job 0.
+12 of 12 steps (100%) done
+Complete log: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/.snakemake/log/2020-06-12T211759.632382.snakemake.log

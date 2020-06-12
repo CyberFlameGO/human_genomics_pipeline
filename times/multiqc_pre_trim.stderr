@@ -1,0 +1,13 @@
+[WARNING]         multiqc : MultiQC Version v1.9 now available!
+[INFO   ]         multiqc : This is MultiQC v1.8 (59d7fe6)
+[INFO   ]         multiqc : Template    : default
+[INFO   ]         multiqc : Report title: pre_trim
+[INFO   ]         multiqc : Searching   : /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/qc/fastqc/NIST7035_NIST_chr1-15_R1_fastqc.zip
+[INFO   ]         multiqc : Searching   : /store/lkemp/exome_project/resource_benchmarking/resource_bench2.0/human_genomics_pipeline/qc/fastqc/NIST7035_NIST_chr1-15_R2_fastqc.zip
+[INFO   ]          fastqc : Found 2 reports
+[INFO   ]         multiqc : Compressing plot data
+[INFO   ]         multiqc : Report      : qc/multiqc/pre_trim_multiqc_report.html
+[INFO   ]         multiqc : Data        : qc/multiqc/pre_trim_multiqc_report_data
+[INFO   ]         multiqc : MultiQC complete
+1.84user 0.11system 0:03.75elapsed 52%CPU (0avgtext+0avgdata 90012maxresident)k
+0inputs+5144outputs (0major+34510minor)pagefaults 0swaps
