@@ -2,12 +2,12 @@
 [INFO   ]         multiqc : This is MultiQC v1.8 (59d7fe6)
 [INFO   ]         multiqc : Template    : default
 [INFO   ]         multiqc : Report title: post_trim
-[INFO   ]         multiqc : Searching   : /store/lkemp/exome_project/resource_benchmarking/resource_bench2.2/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R1_val_1_fastqc.zip
-[INFO   ]         multiqc : Searching   : /store/lkemp/exome_project/resource_benchmarking/resource_bench2.2/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R2_val_2_fastqc.zip
+[INFO   ]         multiqc : Searching   : /store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R1_val_1_fastqc.zip
+[INFO   ]         multiqc : Searching   : /store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R2_val_2_fastqc.zip
 [INFO   ]          fastqc : Found 2 reports
 [INFO   ]         multiqc : Compressing plot data
 [INFO   ]         multiqc : Report      : qc/multiqc/post_trim_multiqc_report.html
 [INFO   ]         multiqc : Data        : qc/multiqc/post_trim_multiqc_report_data
 [INFO   ]         multiqc : MultiQC complete
-2.14user 0.24system 0:08.24elapsed 28%CPU (0avgtext+0avgdata 89760maxresident)k
-49800inputs+5152outputs (155major+49665minor)pagefaults 0swaps
+1.78user 0.15system 0:04.86elapsed 39%CPU (0avgtext+0avgdata 90264maxresident)k
+424inputs+5144outputs (1major+34584minor)pagefaults 0swaps

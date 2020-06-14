@@ -1,14 +1,15 @@
+Using an excessive number of cores has a diminishing return! It is recommended not to exceed 8 cores per trimming process (you asked for 8 cores). Please consider re-specifying
 Path to Cutadapt set as: 'cutadapt' (default)
 Cutadapt seems to be working fine (tested command 'cutadapt --version')
 Cutadapt version: 2.6
 Could not detect version of Python used by Cutadapt from the first line of Cutadapt (but found this: >>>#!/bin/sh<<<)
 Letting the (modified) Cutadapt deal with the Python version instead
-Parallel gzip (pigz) detected. Proceeding with multicore (de)compression using 4 cores
+Parallel gzip (pigz) detected. Proceeding with multicore (de)compression using 8 cores
 
 No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
 
-Output will be written into the directory: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.2/human_genomics_pipeline/trim_galore/
-Writing report to '/store/lkemp/exome_project/resource_benchmarking/resource_bench2.2/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R1.fastq.gz_trimming_report.txt'
+Output will be written into the directory: /store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/trim_galore/
+Writing report to '/store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R1.fastq.gz_trimming_report.txt'
 
 SUMMARISING RUN PARAMETERS
 ==========================
@@ -17,7 +18,7 @@ Trimming mode: paired-end
 Trim Galore version: 0.6.4_dev
 Cutadapt version: 2.6
 Python version: could not detect
-Number of cores used for trimming: 4
+Number of cores used for trimming: 8
 Quality Phred score cutoff: 20
 Quality encoding type selected: ASCII+33
 Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; user defined)
@@ -27,7 +28,7 @@ Minimum required sequence length for both reads before a sequence pair gets remo
 Running FastQC on the data once trimming has completed
 Output file(s) will be GZIP compressed
 
-Cutadapt seems to be fairly up-to-date (version 2.6). Setting -j 4
+Cutadapt seems to be fairly up-to-date (version 2.6). Setting -j 8
 Writing final adapter and quality trimmed output to NIST7035_NIST_chr1-15_R1_trimmed.fq.gz
 
 
@@ -35,9 +36,9 @@ Writing final adapter and quality trimmed output to NIST7035_NIST_chr1-15_R1_tri
 10000000 sequences processed
 20000000 sequences processed
 This is cutadapt 2.6 with Python 3.7.6
-Command line parameters: -j 4 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ../fastq/NIST7035_NIST_chr1-15_R1.fastq.gz
-Processing reads on 4 cores in single-end mode ...
-Finished in 269.38 s (9 us/read; 6.55 M reads/minute).
+Command line parameters: -j 8 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ../fastq/NIST7035_NIST_chr1-15_R1.fastq.gz
+Processing reads on 8 cores in single-end mode ...
+Finished in 142.77 s (5 us/read; 12.37 M reads/minute).
 
 === Summary ===
 
@@ -172,7 +173,7 @@ RUN STATISTICS FOR INPUT FILE: ../fastq/NIST7035_NIST_chr1-15_R1.fastq.gz
 29425520 sequences processed in total
 The length threshold of paired-end sequences gets evaluated later on (in the validation step)
 
-Writing report to '/store/lkemp/exome_project/resource_benchmarking/resource_bench2.2/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R2.fastq.gz_trimming_report.txt'
+Writing report to '/store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/trim_galore/NIST7035_NIST_chr1-15_R2.fastq.gz_trimming_report.txt'
 
 SUMMARISING RUN PARAMETERS
 ==========================
@@ -181,7 +182,7 @@ Trimming mode: paired-end
 Trim Galore version: 0.6.4_dev
 Cutadapt version: 2.6
 Python version: could not detect
-Number of cores used for trimming: 4
+Number of cores used for trimming: 8
 Quality Phred score cutoff: 20
 Quality encoding type selected: ASCII+33
 Adapter sequence: 'AGATCGGAAGAGC' (Illumina TruSeq, Sanger iPCR; user defined)
@@ -191,7 +192,7 @@ Minimum required sequence length for both reads before a sequence pair gets remo
 Running FastQC on the data once trimming has completed
 Output file(s) will be GZIP compressed
 
-Cutadapt seems to be fairly up-to-date (version 2.6). Setting -j -j 4
+Cutadapt seems to be fairly up-to-date (version 2.6). Setting -j -j 8
 Writing final adapter and quality trimmed output to NIST7035_NIST_chr1-15_R2_trimmed.fq.gz
 
 
@@ -199,9 +200,9 @@ Writing final adapter and quality trimmed output to NIST7035_NIST_chr1-15_R2_tri
 10000000 sequences processed
 20000000 sequences processed
 This is cutadapt 2.6 with Python 3.7.6
-Command line parameters: -j 4 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ../fastq/NIST7035_NIST_chr1-15_R2.fastq.gz
-Processing reads on 4 cores in single-end mode ...
-Finished in 262.75 s (9 us/read; 6.72 M reads/minute).
+Command line parameters: -j 8 -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC ../fastq/NIST7035_NIST_chr1-15_R2.fastq.gz
+Processing reads on 8 cores in single-end mode ...
+Finished in 135.67 s (5 us/read; 13.01 M reads/minute).
 
 === Summary ===
 
@@ -398,5 +399,5 @@ Deleting both intermediate output files NIST7035_NIST_chr1-15_R1_trimmed.fq.gz a
 
 ====================================================================================================
 
-5970.88user 173.47system 20:04.13elapsed 510%CPU (0avgtext+0avgdata 343172maxresident)k
-90120inputs+18057912outputs (180major+6403420minor)pagefaults 0swaps
+5916.86user 158.72system 13:05.28elapsed 773%CPU (0avgtext+0avgdata 336828maxresident)k
+240inputs+18057776outputs (1major+6614937minor)pagefaults 0swaps

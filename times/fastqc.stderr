@@ -2,8 +2,8 @@ Started analysis of NIST7035_NIST_chr1-15_R1.fastq.gz
 Started analysis of NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 5% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
 Approx 5% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
-Approx 10% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 10% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
+Approx 10% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 15% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
 Approx 15% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 20% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
@@ -27,16 +27,16 @@ Approx 60% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 65% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
 Approx 65% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 70% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 70% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 75% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 75% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 70% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 80% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 80% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 75% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 85% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 85% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 80% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 90% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 90% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 85% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 95% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
+Approx 90% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 95% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
-427.16user 11.60system 3:54.54elapsed 187%CPU (0avgtext+0avgdata 896528maxresident)k
-9441912inputs+9360outputs (0major+2766429minor)pagefaults 0swaps
+451.33user 17.72system 4:45.41elapsed 164%CPU (0avgtext+0avgdata 1622328maxresident)k
+9442168inputs+9472outputs (1major+9748860minor)pagefaults 0swaps
