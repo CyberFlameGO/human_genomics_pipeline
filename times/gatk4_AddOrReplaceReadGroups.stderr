@@ -1,71 +1,71 @@
-22:43:47.973 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/.snakemake/conda/1c8a5645/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
-[Fri Jun 12 22:43:47 NZST 2020] AddOrReplaceReadGroups  --INPUT mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam --OUTPUT mapped/NIST7035_NIST_chr1-15_sorted_mkdups_rgreplaced.bam --RGID 4 --RGLB lib1 --RGPL illumina --RGPU unit1 --RGSM NIST7035_NIST_chr1-15 --TMP_DIR /store/lkemp/exome_project/tmp  --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
-Jun 12, 2020 10:43:48 PM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+10:40:03.642 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/store/lkemp/exome_project/resource_benchmarking/resource_bench2.4/human_genomics_pipeline/.snakemake/conda/c6d6f067/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sat Jun 13 10:40:03 NZST 2020] AddOrReplaceReadGroups  --INPUT mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam --OUTPUT mapped/NIST7035_NIST_chr1-15_sorted_mkdups_rgreplaced.bam --RGID 4 --RGLB lib1 --RGPL illumina --RGPU unit1 --RGSM NIST7035_NIST_chr1-15 --TMP_DIR /store/lkemp/exome_project/tmp  --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+Jun 13, 2020 10:40:04 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
 INFO: Failed to detect whether we are running on Google Compute Engine.
-[Fri Jun 12 22:43:48 NZST 2020] Executing as lkemp@Wintermute on Linux 4.4.0-173-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_192-b01; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.1.6.0
-INFO	2020-06-12 22:43:48	AddOrReplaceReadGroups	Created read-group ID=4 PL=illumina LB=lib1 SM=NIST7035_NIST_chr1-15
+[Sat Jun 13 10:40:04 NZST 2020] Executing as lkemp@Wintermute on Linux 4.4.0-173-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_192-b01; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: Version:4.1.6.0
+INFO	2020-06-13 10:40:04	AddOrReplaceReadGroups	Created read-group ID=4 PL=illumina LB=lib1 SM=NIST7035_NIST_chr1-15
 
-INFO	2020-06-12 22:43:52	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:03s.  Time for last 1,000,000:    3s.  Last read position: chr1:16,817,102
-INFO	2020-06-12 22:43:55	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:07s.  Time for last 1,000,000:    3s.  Last read position: chr1:33,988,887
-INFO	2020-06-12 22:43:59	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:10s.  Time for last 1,000,000:    3s.  Last read position: chr1:67,877,736
-INFO	2020-06-12 22:44:02	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:00:14s.  Time for last 1,000,000:    3s.  Last read position: chr1:118,502,119
-INFO	2020-06-12 22:44:05	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:00:17s.  Time for last 1,000,000:    3s.  Last read position: chr1:151,319,003
-INFO	2020-06-12 22:44:08	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:00:20s.  Time for last 1,000,000:    3s.  Last read position: chr1:170,004,554
-INFO	2020-06-12 22:44:11	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:00:23s.  Time for last 1,000,000:    3s.  Last read position: chr1:208,199,070
-INFO	2020-06-12 22:44:14	AddOrReplaceReadGroups	Processed     8,000,000 records.  Elapsed time: 00:00:26s.  Time for last 1,000,000:    2s.  Last read position: chr1:248,224,360
-INFO	2020-06-12 22:44:17	AddOrReplaceReadGroups	Processed     9,000,000 records.  Elapsed time: 00:00:29s.  Time for last 1,000,000:    2s.  Last read position: chr2:47,132,369
-INFO	2020-06-12 22:44:21	AddOrReplaceReadGroups	Processed    10,000,000 records.  Elapsed time: 00:00:32s.  Time for last 1,000,000:    3s.  Last read position: chr2:96,551,632
-INFO	2020-06-12 22:44:24	AddOrReplaceReadGroups	Processed    11,000,000 records.  Elapsed time: 00:00:36s.  Time for last 1,000,000:    3s.  Last read position: chr2:131,340,617
-INFO	2020-06-12 22:44:27	AddOrReplaceReadGroups	Processed    12,000,000 records.  Elapsed time: 00:00:39s.  Time for last 1,000,000:    3s.  Last read position: chr2:183,588,501
-INFO	2020-06-12 22:44:31	AddOrReplaceReadGroups	Processed    13,000,000 records.  Elapsed time: 00:00:43s.  Time for last 1,000,000:    4s.  Last read position: chr2:231,389,627
-INFO	2020-06-12 22:44:35	AddOrReplaceReadGroups	Processed    14,000,000 records.  Elapsed time: 00:00:47s.  Time for last 1,000,000:    3s.  Last read position: chr3:35,726,863
-INFO	2020-06-12 22:44:38	AddOrReplaceReadGroups	Processed    15,000,000 records.  Elapsed time: 00:00:50s.  Time for last 1,000,000:    3s.  Last read position: chr3:55,041,838
-INFO	2020-06-12 22:44:42	AddOrReplaceReadGroups	Processed    16,000,000 records.  Elapsed time: 00:00:54s.  Time for last 1,000,000:    3s.  Last read position: chr3:126,137,470
-INFO	2020-06-12 22:44:45	AddOrReplaceReadGroups	Processed    17,000,000 records.  Elapsed time: 00:00:57s.  Time for last 1,000,000:    3s.  Last read position: chr3:183,533,761
-INFO	2020-06-12 22:44:48	AddOrReplaceReadGroups	Processed    18,000,000 records.  Elapsed time: 00:01:00s.  Time for last 1,000,000:    3s.  Last read position: chr4:9,246,239
-INFO	2020-06-12 22:44:51	AddOrReplaceReadGroups	Processed    19,000,000 records.  Elapsed time: 00:01:03s.  Time for last 1,000,000:    3s.  Last read position: chr4:73,941,083
-INFO	2020-06-12 22:44:55	AddOrReplaceReadGroups	Processed    20,000,000 records.  Elapsed time: 00:01:06s.  Time for last 1,000,000:    3s.  Last read position: chr4:144,106,573
-INFO	2020-06-12 22:44:58	AddOrReplaceReadGroups	Processed    21,000,000 records.  Elapsed time: 00:01:09s.  Time for last 1,000,000:    3s.  Last read position: chr5:24,070,041
-INFO	2020-06-12 22:45:01	AddOrReplaceReadGroups	Processed    22,000,000 records.  Elapsed time: 00:01:12s.  Time for last 1,000,000:    3s.  Last read position: chr5:70,405,135
-INFO	2020-06-12 22:45:04	AddOrReplaceReadGroups	Processed    23,000,000 records.  Elapsed time: 00:01:16s.  Time for last 1,000,000:    3s.  Last read position: chr5:134,387,097
-INFO	2020-06-12 22:45:07	AddOrReplaceReadGroups	Processed    24,000,000 records.  Elapsed time: 00:01:19s.  Time for last 1,000,000:    3s.  Last read position: chr5:170,549,008
-INFO	2020-06-12 22:45:10	AddOrReplaceReadGroups	Processed    25,000,000 records.  Elapsed time: 00:01:22s.  Time for last 1,000,000:    3s.  Last read position: chr6:31,239,429
-INFO	2020-06-12 22:45:14	AddOrReplaceReadGroups	Processed    26,000,000 records.  Elapsed time: 00:01:25s.  Time for last 1,000,000:    3s.  Last read position: chr6:79,309,736
-INFO	2020-06-12 22:45:18	AddOrReplaceReadGroups	Processed    27,000,000 records.  Elapsed time: 00:01:30s.  Time for last 1,000,000:    4s.  Last read position: chr6:146,053,896
-INFO	2020-06-12 22:45:21	AddOrReplaceReadGroups	Processed    28,000,000 records.  Elapsed time: 00:01:33s.  Time for last 1,000,000:    3s.  Last read position: chr7:21,892,118
-INFO	2020-06-12 22:45:25	AddOrReplaceReadGroups	Processed    29,000,000 records.  Elapsed time: 00:01:36s.  Time for last 1,000,000:    3s.  Last read position: chr7:56,885,773
-INFO	2020-06-12 22:45:28	AddOrReplaceReadGroups	Processed    30,000,000 records.  Elapsed time: 00:01:40s.  Time for last 1,000,000:    3s.  Last read position: chr7:89,903,280
-INFO	2020-06-12 22:45:32	AddOrReplaceReadGroups	Processed    31,000,000 records.  Elapsed time: 00:01:43s.  Time for last 1,000,000:    3s.  Last read position: chr7:116,372,086
-INFO	2020-06-12 22:45:35	AddOrReplaceReadGroups	Processed    32,000,000 records.  Elapsed time: 00:01:47s.  Time for last 1,000,000:    3s.  Last read position: chr7:154,755,383
-INFO	2020-06-12 22:45:38	AddOrReplaceReadGroups	Processed    33,000,000 records.  Elapsed time: 00:01:49s.  Time for last 1,000,000:    2s.  Last read position: chr8:22,478,813
-INFO	2020-06-12 22:45:41	AddOrReplaceReadGroups	Processed    34,000,000 records.  Elapsed time: 00:01:53s.  Time for last 1,000,000:    3s.  Last read position: chr8:86,360,713
-INFO	2020-06-12 22:45:44	AddOrReplaceReadGroups	Processed    35,000,000 records.  Elapsed time: 00:01:55s.  Time for last 1,000,000:    2s.  Last read position: chr8:86,795,180
-INFO	2020-06-12 22:45:46	AddOrReplaceReadGroups	Processed    36,000,000 records.  Elapsed time: 00:01:58s.  Time for last 1,000,000:    2s.  Last read position: chr8:125,464,533
-INFO	2020-06-12 22:45:49	AddOrReplaceReadGroups	Processed    37,000,000 records.  Elapsed time: 00:02:01s.  Time for last 1,000,000:    3s.  Last read position: chr9:32,634,986
-INFO	2020-06-12 22:45:53	AddOrReplaceReadGroups	Processed    38,000,000 records.  Elapsed time: 00:02:04s.  Time for last 1,000,000:    3s.  Last read position: chr9:70,918,688
-INFO	2020-06-12 22:45:56	AddOrReplaceReadGroups	Processed    39,000,000 records.  Elapsed time: 00:02:07s.  Time for last 1,000,000:    3s.  Last read position: chr9:116,023,009
-INFO	2020-06-12 22:45:59	AddOrReplaceReadGroups	Processed    40,000,000 records.  Elapsed time: 00:02:10s.  Time for last 1,000,000:    3s.  Last read position: chr9:139,739,972
-INFO	2020-06-12 22:46:02	AddOrReplaceReadGroups	Processed    41,000,000 records.  Elapsed time: 00:02:14s.  Time for last 1,000,000:    3s.  Last read position: chr10:45,566,555
-INFO	2020-06-12 22:46:06	AddOrReplaceReadGroups	Processed    42,000,000 records.  Elapsed time: 00:02:17s.  Time for last 1,000,000:    3s.  Last read position: chr10:87,749,918
-INFO	2020-06-12 22:46:09	AddOrReplaceReadGroups	Processed    43,000,000 records.  Elapsed time: 00:02:21s.  Time for last 1,000,000:    3s.  Last read position: chr10:121,934,958
-INFO	2020-06-12 22:46:13	AddOrReplaceReadGroups	Processed    44,000,000 records.  Elapsed time: 00:02:24s.  Time for last 1,000,000:    3s.  Last read position: chr11:11,470,317
-INFO	2020-06-12 22:46:16	AddOrReplaceReadGroups	Processed    45,000,000 records.  Elapsed time: 00:02:28s.  Time for last 1,000,000:    3s.  Last read position: chr11:61,099,075
-INFO	2020-06-12 22:46:20	AddOrReplaceReadGroups	Processed    46,000,000 records.  Elapsed time: 00:02:31s.  Time for last 1,000,000:    3s.  Last read position: chr11:74,554,012
-INFO	2020-06-12 22:46:23	AddOrReplaceReadGroups	Processed    47,000,000 records.  Elapsed time: 00:02:35s.  Time for last 1,000,000:    3s.  Last read position: chr11:119,535,750
-INFO	2020-06-12 22:46:26	AddOrReplaceReadGroups	Processed    48,000,000 records.  Elapsed time: 00:02:38s.  Time for last 1,000,000:    2s.  Last read position: chr12:14,809,499
-INFO	2020-06-12 22:46:30	AddOrReplaceReadGroups	Processed    49,000,000 records.  Elapsed time: 00:02:41s.  Time for last 1,000,000:    3s.  Last read position: chr12:54,118,891
-INFO	2020-06-12 22:46:33	AddOrReplaceReadGroups	Processed    50,000,000 records.  Elapsed time: 00:02:45s.  Time for last 1,000,000:    3s.  Last read position: chr12:101,723,058
-INFO	2020-06-12 22:46:36	AddOrReplaceReadGroups	Processed    51,000,000 records.  Elapsed time: 00:02:48s.  Time for last 1,000,000:    3s.  Last read position: chr12:133,287,471
-INFO	2020-06-12 22:46:39	AddOrReplaceReadGroups	Processed    52,000,000 records.  Elapsed time: 00:02:51s.  Time for last 1,000,000:    3s.  Last read position: chr13:78,368,061
-INFO	2020-06-12 22:46:42	AddOrReplaceReadGroups	Processed    53,000,000 records.  Elapsed time: 00:02:54s.  Time for last 1,000,000:    3s.  Last read position: chr14:36,094,603
-INFO	2020-06-12 22:46:46	AddOrReplaceReadGroups	Processed    54,000,000 records.  Elapsed time: 00:02:57s.  Time for last 1,000,000:    3s.  Last read position: chr14:82,369,807
-INFO	2020-06-12 22:46:49	AddOrReplaceReadGroups	Processed    55,000,000 records.  Elapsed time: 00:03:00s.  Time for last 1,000,000:    3s.  Last read position: chr15:28,916,540
-INFO	2020-06-12 22:46:52	AddOrReplaceReadGroups	Processed    56,000,000 records.  Elapsed time: 00:03:04s.  Time for last 1,000,000:    3s.  Last read position: chr15:55,111,240
-INFO	2020-06-12 22:46:55	AddOrReplaceReadGroups	Processed    57,000,000 records.  Elapsed time: 00:03:07s.  Time for last 1,000,000:    3s.  Last read position: chr15:82,754,542
-[Fri Jun 12 22:46:59 NZST 2020] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 3.20 minutes.
-Runtime.totalMemory()=2384461824
-Using GATK jar /store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/.snakemake/conda/1c8a5645/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar
+INFO	2020-06-13 10:40:08	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:04s.  Time for last 1,000,000:    4s.  Last read position: chr1:16,817,080
+INFO	2020-06-13 10:40:12	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:08s.  Time for last 1,000,000:    4s.  Last read position: chr1:33,988,879
+INFO	2020-06-13 10:40:16	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:12s.  Time for last 1,000,000:    3s.  Last read position: chr1:67,877,731
+INFO	2020-06-13 10:40:20	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:00:16s.  Time for last 1,000,000:    4s.  Last read position: chr1:118,502,019
+INFO	2020-06-13 10:40:24	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:00:20s.  Time for last 1,000,000:    4s.  Last read position: chr1:151,319,003
+INFO	2020-06-13 10:40:28	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:00:24s.  Time for last 1,000,000:    3s.  Last read position: chr1:170,004,553
+INFO	2020-06-13 10:40:32	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:00:28s.  Time for last 1,000,000:    3s.  Last read position: chr1:208,199,050
+INFO	2020-06-13 10:40:35	AddOrReplaceReadGroups	Processed     8,000,000 records.  Elapsed time: 00:00:31s.  Time for last 1,000,000:    3s.  Last read position: chr1:248,224,335
+INFO	2020-06-13 10:40:39	AddOrReplaceReadGroups	Processed     9,000,000 records.  Elapsed time: 00:00:35s.  Time for last 1,000,000:    3s.  Last read position: chr2:47,132,366
+INFO	2020-06-13 10:40:43	AddOrReplaceReadGroups	Processed    10,000,000 records.  Elapsed time: 00:00:39s.  Time for last 1,000,000:    3s.  Last read position: chr2:96,551,599
+INFO	2020-06-13 10:40:46	AddOrReplaceReadGroups	Processed    11,000,000 records.  Elapsed time: 00:00:42s.  Time for last 1,000,000:    3s.  Last read position: chr2:131,340,616
+INFO	2020-06-13 10:40:50	AddOrReplaceReadGroups	Processed    12,000,000 records.  Elapsed time: 00:00:46s.  Time for last 1,000,000:    4s.  Last read position: chr2:183,586,820
+INFO	2020-06-13 10:40:55	AddOrReplaceReadGroups	Processed    13,000,000 records.  Elapsed time: 00:00:50s.  Time for last 1,000,000:    4s.  Last read position: chr2:231,382,999
+INFO	2020-06-13 10:40:58	AddOrReplaceReadGroups	Processed    14,000,000 records.  Elapsed time: 00:00:54s.  Time for last 1,000,000:    3s.  Last read position: chr3:35,726,840
+INFO	2020-06-13 10:41:02	AddOrReplaceReadGroups	Processed    15,000,000 records.  Elapsed time: 00:00:58s.  Time for last 1,000,000:    3s.  Last read position: chr3:55,041,828
+INFO	2020-06-13 10:41:05	AddOrReplaceReadGroups	Processed    16,000,000 records.  Elapsed time: 00:01:01s.  Time for last 1,000,000:    3s.  Last read position: chr3:126,137,468
+INFO	2020-06-13 10:41:09	AddOrReplaceReadGroups	Processed    17,000,000 records.  Elapsed time: 00:01:05s.  Time for last 1,000,000:    3s.  Last read position: chr3:183,533,756
+INFO	2020-06-13 10:41:13	AddOrReplaceReadGroups	Processed    18,000,000 records.  Elapsed time: 00:01:09s.  Time for last 1,000,000:    3s.  Last read position: chr4:9,246,237
+INFO	2020-06-13 10:41:17	AddOrReplaceReadGroups	Processed    19,000,000 records.  Elapsed time: 00:01:12s.  Time for last 1,000,000:    3s.  Last read position: chr4:73,941,068
+INFO	2020-06-13 10:41:20	AddOrReplaceReadGroups	Processed    20,000,000 records.  Elapsed time: 00:01:16s.  Time for last 1,000,000:    3s.  Last read position: chr4:144,106,567
+INFO	2020-06-13 10:41:24	AddOrReplaceReadGroups	Processed    21,000,000 records.  Elapsed time: 00:01:20s.  Time for last 1,000,000:    3s.  Last read position: chr5:24,056,679
+INFO	2020-06-13 10:41:27	AddOrReplaceReadGroups	Processed    22,000,000 records.  Elapsed time: 00:01:23s.  Time for last 1,000,000:    3s.  Last read position: chr5:70,405,125
+INFO	2020-06-13 10:41:31	AddOrReplaceReadGroups	Processed    23,000,000 records.  Elapsed time: 00:01:27s.  Time for last 1,000,000:    3s.  Last read position: chr5:134,382,139
+INFO	2020-06-13 10:41:35	AddOrReplaceReadGroups	Processed    24,000,000 records.  Elapsed time: 00:01:31s.  Time for last 1,000,000:    4s.  Last read position: chr5:170,538,512
+INFO	2020-06-13 10:41:39	AddOrReplaceReadGroups	Processed    25,000,000 records.  Elapsed time: 00:01:35s.  Time for last 1,000,000:    4s.  Last read position: chr6:31,239,116
+INFO	2020-06-13 10:41:43	AddOrReplaceReadGroups	Processed    26,000,000 records.  Elapsed time: 00:01:39s.  Time for last 1,000,000:    4s.  Last read position: chr6:79,301,157
+INFO	2020-06-13 10:41:47	AddOrReplaceReadGroups	Processed    27,000,000 records.  Elapsed time: 00:01:43s.  Time for last 1,000,000:    4s.  Last read position: chr6:146,048,533
+INFO	2020-06-13 10:41:51	AddOrReplaceReadGroups	Processed    28,000,000 records.  Elapsed time: 00:01:47s.  Time for last 1,000,000:    3s.  Last read position: chr7:21,892,087
+INFO	2020-06-13 10:41:55	AddOrReplaceReadGroups	Processed    29,000,000 records.  Elapsed time: 00:01:51s.  Time for last 1,000,000:    3s.  Last read position: chr7:56,885,771
+INFO	2020-06-13 10:41:59	AddOrReplaceReadGroups	Processed    30,000,000 records.  Elapsed time: 00:01:55s.  Time for last 1,000,000:    3s.  Last read position: chr7:89,903,218
+INFO	2020-06-13 10:42:03	AddOrReplaceReadGroups	Processed    31,000,000 records.  Elapsed time: 00:01:59s.  Time for last 1,000,000:    3s.  Last read position: chr7:116,371,781
+INFO	2020-06-13 10:42:07	AddOrReplaceReadGroups	Processed    32,000,000 records.  Elapsed time: 00:02:03s.  Time for last 1,000,000:    4s.  Last read position: chr7:154,755,367
+INFO	2020-06-13 10:42:10	AddOrReplaceReadGroups	Processed    33,000,000 records.  Elapsed time: 00:02:06s.  Time for last 1,000,000:    3s.  Last read position: chr8:22,478,791
+INFO	2020-06-13 10:42:14	AddOrReplaceReadGroups	Processed    34,000,000 records.  Elapsed time: 00:02:10s.  Time for last 1,000,000:    3s.  Last read position: chr8:86,360,646
+INFO	2020-06-13 10:42:17	AddOrReplaceReadGroups	Processed    35,000,000 records.  Elapsed time: 00:02:13s.  Time for last 1,000,000:    3s.  Last read position: chr8:86,795,174
+INFO	2020-06-13 10:42:20	AddOrReplaceReadGroups	Processed    36,000,000 records.  Elapsed time: 00:02:16s.  Time for last 1,000,000:    2s.  Last read position: chr8:125,464,410
+INFO	2020-06-13 10:42:23	AddOrReplaceReadGroups	Processed    37,000,000 records.  Elapsed time: 00:02:18s.  Time for last 1,000,000:    2s.  Last read position: chr9:32,634,972
+INFO	2020-06-13 10:42:25	AddOrReplaceReadGroups	Processed    38,000,000 records.  Elapsed time: 00:02:21s.  Time for last 1,000,000:    2s.  Last read position: chr9:70,918,680
+INFO	2020-06-13 10:42:28	AddOrReplaceReadGroups	Processed    39,000,000 records.  Elapsed time: 00:02:24s.  Time for last 1,000,000:    2s.  Last read position: chr9:116,022,936
+INFO	2020-06-13 10:42:32	AddOrReplaceReadGroups	Processed    40,000,000 records.  Elapsed time: 00:02:28s.  Time for last 1,000,000:    3s.  Last read position: chr9:139,739,965
+INFO	2020-06-13 10:42:36	AddOrReplaceReadGroups	Processed    41,000,000 records.  Elapsed time: 00:02:31s.  Time for last 1,000,000:    3s.  Last read position: chr10:45,566,519
+INFO	2020-06-13 10:42:39	AddOrReplaceReadGroups	Processed    42,000,000 records.  Elapsed time: 00:02:35s.  Time for last 1,000,000:    3s.  Last read position: chr10:87,748,358
+INFO	2020-06-13 10:42:42	AddOrReplaceReadGroups	Processed    43,000,000 records.  Elapsed time: 00:02:38s.  Time for last 1,000,000:    2s.  Last read position: chr10:121,932,787
+INFO	2020-06-13 10:42:45	AddOrReplaceReadGroups	Processed    44,000,000 records.  Elapsed time: 00:02:40s.  Time for last 1,000,000:    2s.  Last read position: chr11:11,470,320
+INFO	2020-06-13 10:42:47	AddOrReplaceReadGroups	Processed    45,000,000 records.  Elapsed time: 00:02:43s.  Time for last 1,000,000:    2s.  Last read position: chr11:61,099,086
+INFO	2020-06-13 10:42:50	AddOrReplaceReadGroups	Processed    46,000,000 records.  Elapsed time: 00:02:46s.  Time for last 1,000,000:    2s.  Last read position: chr11:74,554,018
+INFO	2020-06-13 10:42:53	AddOrReplaceReadGroups	Processed    47,000,000 records.  Elapsed time: 00:02:49s.  Time for last 1,000,000:    3s.  Last read position: chr11:119,535,750
+INFO	2020-06-13 10:42:56	AddOrReplaceReadGroups	Processed    48,000,000 records.  Elapsed time: 00:02:52s.  Time for last 1,000,000:    3s.  Last read position: chr12:14,809,499
+INFO	2020-06-13 10:43:00	AddOrReplaceReadGroups	Processed    49,000,000 records.  Elapsed time: 00:02:56s.  Time for last 1,000,000:    3s.  Last read position: chr12:54,118,869
+INFO	2020-06-13 10:43:02	AddOrReplaceReadGroups	Processed    50,000,000 records.  Elapsed time: 00:02:58s.  Time for last 1,000,000:    2s.  Last read position: chr12:101,723,021
+INFO	2020-06-13 10:43:05	AddOrReplaceReadGroups	Processed    51,000,000 records.  Elapsed time: 00:03:01s.  Time for last 1,000,000:    2s.  Last read position: chr12:133,284,967
+INFO	2020-06-13 10:43:08	AddOrReplaceReadGroups	Processed    52,000,000 records.  Elapsed time: 00:03:04s.  Time for last 1,000,000:    2s.  Last read position: chr13:78,366,547
+INFO	2020-06-13 10:43:11	AddOrReplaceReadGroups	Processed    53,000,000 records.  Elapsed time: 00:03:07s.  Time for last 1,000,000:    2s.  Last read position: chr14:36,094,590
+INFO	2020-06-13 10:43:15	AddOrReplaceReadGroups	Processed    54,000,000 records.  Elapsed time: 00:03:10s.  Time for last 1,000,000:    3s.  Last read position: chr14:82,364,450
+INFO	2020-06-13 10:43:18	AddOrReplaceReadGroups	Processed    55,000,000 records.  Elapsed time: 00:03:14s.  Time for last 1,000,000:    3s.  Last read position: chr15:28,916,527
+INFO	2020-06-13 10:43:21	AddOrReplaceReadGroups	Processed    56,000,000 records.  Elapsed time: 00:03:17s.  Time for last 1,000,000:    3s.  Last read position: chr15:55,106,873
+INFO	2020-06-13 10:43:24	AddOrReplaceReadGroups	Processed    57,000,000 records.  Elapsed time: 00:03:20s.  Time for last 1,000,000:    3s.  Last read position: chr15:82,754,235
+[Sat Jun 13 10:43:27 NZST 2020] picard.sam.AddOrReplaceReadGroups done. Elapsed time: 3.40 minutes.
+Runtime.totalMemory()=3163553792
+Using GATK jar /store/lkemp/exome_project/resource_benchmarking/resource_bench2.4/human_genomics_pipeline/.snakemake/conda/c6d6f067/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar
 Running:
-    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /store/lkemp/exome_project/resource_benchmarking/resource_bench2.3/human_genomics_pipeline/.snakemake/conda/1c8a5645/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar AddOrReplaceReadGroups -I mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam -O mapped/NIST7035_NIST_chr1-15_sorted_mkdups_rgreplaced.bam --TMP_DIR /store/lkemp/exome_project/tmp/ -ID 4 -LB lib1 -PL illumina -PU unit1 -SM NIST7035_NIST_chr1-15
-364.09user 22.39system 3:14.73elapsed 198%CPU (0avgtext+0avgdata 3414020maxresident)k
-8inputs+11735808outputs (0major+8395028minor)pagefaults 0swaps
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /store/lkemp/exome_project/resource_benchmarking/resource_bench2.4/human_genomics_pipeline/.snakemake/conda/c6d6f067/share/gatk4-4.1.6.0-0/gatk-package-4.1.6.0-local.jar AddOrReplaceReadGroups -I mapped/NIST7035_NIST_chr1-15_bwamem_sorted_mkdups.bam -O mapped/NIST7035_NIST_chr1-15_sorted_mkdups_rgreplaced.bam --TMP_DIR /store/lkemp/exome_project/tmp/ -ID 4 -LB lib1 -PL illumina -PU unit1 -SM NIST7035_NIST_chr1-15
+383.13user 34.51system 3:27.13elapsed 201%CPU (0avgtext+0avgdata 3108912maxresident)k
+8inputs+11735632outputs (0major+16399531minor)pagefaults 0swaps
