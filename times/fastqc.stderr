@@ -1,42 +1,42 @@
 Started analysis of NIST7035_NIST_chr1-15_R1.fastq.gz
 Started analysis of NIST7035_NIST_chr1-15_R2.fastq.gz
-Approx 5% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 5% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 10% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 5% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 10% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 15% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 10% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 15% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 20% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 15% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 20% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 25% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 20% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 25% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 30% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 25% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 30% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 35% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 30% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 35% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 40% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
-Approx 45% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 35% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 40% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 50% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 40% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 45% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 55% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 45% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 50% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 60% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 50% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 55% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 65% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 60% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 70% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 55% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 65% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 75% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
-Approx 80% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 60% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 70% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 85% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 65% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 75% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 90% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 70% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 80% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-Approx 95% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 75% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 85% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
+Approx 80% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 90% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
+Approx 85% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
 Approx 95% complete for NIST7035_NIST_chr1-15_R1.fastq.gz
-477.08user 70.37system 4:42.98elapsed 193%CPU (0avgtext+0avgdata 2906724maxresident)k
-88inputs+9472outputs (0major+36097577minor)pagefaults 0swaps
+Approx 90% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+Approx 95% complete for NIST7035_NIST_chr1-15_R2.fastq.gz
+459.23user 50.48system 4:21.02elapsed 195%CPU (0avgtext+0avgdata 5491636maxresident)k
+0inputs+9432outputs (0major+31476398minor)pagefaults 0swaps
