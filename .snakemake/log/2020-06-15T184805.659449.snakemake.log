@@ -1,0 +1,134 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 32
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	all
+	1	bwa_map
+	1	gatk4_AddOrReplaceReadGroups
+	2	gatk4_ApplyBQSR
+	2	gatk4_BaseRecalibrator
+	2	gatk4_HaplotypeCaller_single
+	1	sambamba_index
+	1	sambamba_index_rgadd
+	1	sambamba_mkdups
+	1	sambamba_sort
+	13
+
+[Mon Jun 15 18:48:05 2020]
+Job 16: Generating a recalibration table for the following rule (Base Quality Score Recalibration)
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+[Mon Jun 15 22:02:12 2020]
+Finished job 16.
+1 of 13 steps (8%) done
+
+[Mon Jun 15 22:02:12 2020]
+Job 10: Applying base quality score recalibration and producing a recalibrated BAM file
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+Removing temporary output file mapped/NIST7086_NIST_sorted_mkdups_rgreplaced.bam.
+Removing temporary output file mapped/NIST7086_NIST_sorted_mkdups_rgreplaced.bam.bai.
+[Mon Jun 15 22:26:02 2020]
+Finished job 10.
+2 of 13 steps (15%) done
+
+[Mon Jun 15 22:26:02 2020]
+Job 4: Calling germline SNPs and indels via local re-assembly of haplotypes
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+[Tue Jun 16 02:33:55 2020]
+Finished job 4.
+3 of 13 steps (23%) done
+
+[Tue Jun 16 02:33:55 2020]
+Job 23: Mapping sequences against a reference human genome with BWA-MEM
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/072b77ef
+[Tue Jun 16 02:44:50 2020]
+Finished job 23.
+4 of 13 steps (31%) done
+
+[Tue Jun 16 02:44:50 2020]
+Job 21: Sorting BAM files
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/16cb885e
+Removing temporary output file mapped/NIST7035_NIST_bwamem.bam.
+Removing temporary output file mapped/NIST7035_NIST_bwamem_sorted.bam.bai.
+[Tue Jun 16 02:47:42 2020]
+Finished job 21.
+5 of 13 steps (38%) done
+
+[Tue Jun 16 02:47:42 2020]
+Job 17: Finding duplicate reads in BAM files
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/16cb885e
+Removing temporary output file mapped/NIST7035_NIST_bwamem_sorted.bam.
+[Tue Jun 16 02:56:12 2020]
+Finished job 17.
+6 of 13 steps (46%) done
+
+[Tue Jun 16 02:56:12 2020]
+Job 18: Building index files for BAM files
+
+Warning: the following output files of rule sambamba_index were not present when the DAG was created:
+{'mapped/NIST7035_NIST_bwamem_sorted_mkdups.bam.bai'}
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/16cb885e
+[Tue Jun 16 02:56:27 2020]
+Finished job 18.
+7 of 13 steps (54%) done
+
+[Tue Jun 16 02:56:27 2020]
+Job 11: Assigning all reads to a single new read-group
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+Removing temporary output file mapped/NIST7035_NIST_bwamem_sorted_mkdups.bam.
+Removing temporary output file mapped/NIST7035_NIST_bwamem_sorted_mkdups.bam.bai.
+[Tue Jun 16 03:01:47 2020]
+Finished job 11.
+8 of 13 steps (62%) done
+
+[Tue Jun 16 03:01:47 2020]
+Job 12: Building index files for BAM files
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/16cb885e
+[Tue Jun 16 03:02:05 2020]
+Finished job 12.
+9 of 13 steps (69%) done
+
+[Tue Jun 16 03:02:05 2020]
+Job 13: Generating a recalibration table for the following rule (Base Quality Score Recalibration)
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+[Tue Jun 16 06:06:32 2020]
+Finished job 13.
+10 of 13 steps (77%) done
+
+[Tue Jun 16 06:06:32 2020]
+Job 9: Applying base quality score recalibration and producing a recalibrated BAM file
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+Removing temporary output file mapped/NIST7035_NIST_sorted_mkdups_rgreplaced.bam.
+Removing temporary output file mapped/NIST7035_NIST_sorted_mkdups_rgreplaced.bam.bai.
+[Tue Jun 16 06:27:51 2020]
+Finished job 9.
+11 of 13 steps (85%) done
+
+[Tue Jun 16 06:27:51 2020]
+Job 3: Calling germline SNPs and indels via local re-assembly of haplotypes
+
+Activating conda environment: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/conda/fde52d25
+[Tue Jun 16 10:24:04 2020]
+Finished job 3.
+12 of 13 steps (92%) done
+
+[Tue Jun 16 10:24:04 2020]
+localrule all:
+    input: qc/multiqc/pre_trim_multiqc_report.html, qc/multiqc/post_trim_multiqc_report.html, vcf/NIST7035_NIST_raw_snps_indels_AS_g.vcf, vcf/NIST7086_NIST_raw_snps_indels_AS_g.vcf
+    jobid: 0
+
+[Tue Jun 16 10:24:04 2020]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: /store/lkemp/exome_project/quality_benchmarking/NA12878_exome/quality_bench1.8/human_genomics_pipeline/.snakemake/log/2020-06-15T184805.659449.snakemake.log
